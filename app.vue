@@ -1,5 +1,7 @@
 <template>
-  <div class="h-[100dvh] w-screen flex items-center justify-center bg-[#f2f2f2]">
+  <div
+    class="flex h-[100dvh] w-screen items-center justify-center bg-[#f2f2f2]"
+  >
     <NuxtPage />
   </div>
 </template>

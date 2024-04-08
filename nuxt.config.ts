@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: ["~/assets/css/main.css"],
   ssr: false,
 
   postcss: {
@@ -14,8 +14,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       API_URL: "https://api.spacexdata.com/v4/launches/",
-    }
+    },
   },
 
-  modules: ["@nuxt/image"]
-})
+  modules: ["@nuxt/image"],
+});
