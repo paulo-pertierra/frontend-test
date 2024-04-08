@@ -1,4 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
+  ssr: false,
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      API_URL: "https://api.spacexdata.com/v4/launches/",
+    }
+  },
+
+  modules: ["@nuxt/image"]
 })
