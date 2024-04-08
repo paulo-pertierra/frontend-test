@@ -13,9 +13,12 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      API_URL: "https://api.spacexdata.com/v4/launches/",
+      API_URL: "https://api.spacexdata.com/v4/launches/query",
     },
   },
 
-  modules: ["@nuxt/image"],
+  modules: [
+    "@nuxt/image",
+    "@vueuse/nuxt"
+  ],
 });
